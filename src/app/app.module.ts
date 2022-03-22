@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { UserComponent } from './Componentes/user/user.component';
 import { LoginComponent } from './Componentes/login/login.component';
 import { MenusComponent } from './Componentes/menus/menus.component';
+import { RegistroComponent } from './Componentes/registro/registro.component';
+import { ServiceService } from './service.service';
 
 
 
@@ -14,14 +16,17 @@ import { MenusComponent } from './Componentes/menus/menus.component';
     AppComponent,
     UserComponent,
     LoginComponent,
-    MenusComponent
+    MenusComponent,
+    RegistroComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    ServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
