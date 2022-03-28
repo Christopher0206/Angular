@@ -8,9 +8,9 @@
 		</div>
 		<br>
 		<div class="login">
-			<form [formGroup]="formularioregistro">
-				<input formControlName="email" [(ngModel)]= "usuario.email" type="text" placeholder="Correo electronico" name="user"><br>
-				<input formControlName="contraseña" [(ngModel)]= "usuario.password" type="password" placeholder="Contraseña" name="password"><br>
+			<form [formGroup]="formregis">
+				<input  [(ngModel)]= "usuario.email" type="text" placeholder="Correo electronico" name="user" formControlName="email"><br>
+				<input formControlName="password" [(ngModel)]= "usuario.password" type="password" placeholder="Contraseña" name="password"><br>
 				<input  routerLink="/login" (click)="registrar()" type="button" value="Registarse">
 			</form>
-		</div>
+		</div> 

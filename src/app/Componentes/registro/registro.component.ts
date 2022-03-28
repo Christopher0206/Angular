@@ -17,7 +17,7 @@ export class RegistroComponent implements OnInit {
     "email":'',
     "password":''
   }
-  constructor(private servicio:ServiceService, private router:Router) {
+  constructor(private servicio:ServiceService) {
 
    }
 
@@ -25,8 +25,8 @@ export class RegistroComponent implements OnInit {
   ngOnInit(): void {
   }
  
-  formularioregistro=new FormGroup({
-    email:new FormControl(null,[Validators.required, Validators.email]),
+  formregis = new FormGroup({
+    email:new FormControl(null,[Validators.required]),
     password:new FormControl(null,[Validators.required])
   })
   
